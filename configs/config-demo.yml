@@ -1,0 +1,13 @@
+app:
+  name: "user-service"
+  version: "1.0.0"
+  database:
+    url: "jdbc:mysql://user-db:3306/users"
+    username: "user_app"
+    password: "${DB_PASSWORD}"
+  features:
+    - "authentication"
+    - "authorization"
+  settings:
+    timeout: 30000
+    max-connections: 100
