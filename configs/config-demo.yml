@@ -11,3 +11,9 @@ app:
   settings:
     timeout: 30000
     max-connections: 100
+    retry-attempts: 3
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: "health,info,metrics,refresh"
